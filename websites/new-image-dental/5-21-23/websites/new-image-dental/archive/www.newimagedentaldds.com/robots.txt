@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /index/
+
+Sitemap: http://www.newimagedentaldds.com/sitemap.xml

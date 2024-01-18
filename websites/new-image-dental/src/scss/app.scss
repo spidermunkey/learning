@@ -1,0 +1,49 @@
+@import 'colors';
+@import './header/main.scss';
+@import './sections/headliner.scss';
+
+*,*:before,*:after {
+    box-sizing: border-box;
+    font-family: inherit;
+}
+
+html,body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background: transparent;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    overflow: scroll;
+}
+
+section {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.logo {
+    display: none;
+    position: absolute;
+    // display: inline-block;
+    :hover {
+        background: linear-gradient($logoGold,$logoBronze,$logoBlue);
+    }
+}
+
+@media (min-width: 1600px) {
+    header {
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: black;
+        clip-path: circle(35%);
+    }
+}

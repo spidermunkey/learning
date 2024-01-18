@@ -1,0 +1,119 @@
+section .location {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 40px;
+    max-width: 50%;
+    .map {
+        width: 100%;
+        img {
+            flex: 1;
+            width: 620px;
+            height: 300px;
+            border-radius: 10px;
+        }
+    }
+    .directions {
+        font-family: 'Comic neue';
+        .message {
+            font-size: 24px;
+            letter-spacing: 0.038em;
+            font-weight: 700;
+            margin: 10px 0;
+        }
+        .address {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            line-height: 1.5;
+            letter-spacing: .025em;
+            font-size: 20px;
+            
+        }
+        .get-directions {
+            margin-top: 24px;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            width: 250px;
+            padding: 16px 24px;
+            border: 1px solid $liteGold;
+            border-radius: 8px;
+        }
+    }
+
+}
+.directory-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    color: #222222da;
+}
+
+.hours-of-operation {
+    width: 50%;
+    font-family: 'Ubuntu';
+    .tele {
+        width: 100%;
+        margin-bottom: 20px;
+        border-radius: 8px;
+        background-color: rgba(255, 255, 255, 0.041);
+        padding: 10px;
+        font-size: 18px;
+        font-weight: bolder;
+        &__label {
+            display: inline-flex;
+            min-width: 120px;
+            font-size: 20px;
+            margin-right: 18px;
+            }
+        &__number {
+            // font-style: oblique;
+            letter-spacing: 0.035em;
+        }
+    }
+
+    .hours {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid rgba(255, 255, 255, 0.0871);
+        border-radius: 2px;
+
+        .day {
+            background-color: rgba(255, 255, 255, 0.041);
+            // color: black;
+            border-bottom: 1px solid $liteGold;
+            display: inline-flex;
+            // flex-wrap: wrap;
+            align-items: baseline;
+            padding: 12px 10px;
+            width: 100%;
+
+            &:last-of-type {
+                border-bottom: none;
+            }
+
+            &__name {
+                font-size: 20px;
+                letter-spacing: 0.035em;
+                min-width: 120px;
+                margin-right: 20px;
+            }
+
+            &__hours {
+                display: inline-flex;
+                align-items: center;
+                white-space: nowrap;
+                letter-spacing: 0.025em;
+                font-size: 18px;
+            }
+        
+            &__note {
+                color: $liteBlue;
+                font-size: 14px;
+                margin-left: 20px;
+                width: 100%;
+            }
+        }
+    }
+}

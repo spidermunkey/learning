@@ -1,0 +1,130 @@
+section.hero img {
+    position: absolute;
+    z-index: -1;
+    height: 100vh;
+    width: 100vw;
+}
+
+.hero .cta {
+
+    position: absolute;
+    bottom: 40px;
+    left: 50px;
+    padding: 20px 40px;
+    background: $off-white;
+    border: 1px solid #d9d9d9;
+    border-top-color: rgb(217, 217, 217);
+    border-right-color: rgb(217, 217, 217);
+    border-bottom-color: rgb(217, 217, 217);
+    border-left-color: rgb(217, 217, 217);
+    border-radius: .5em;
+    color: #363636;
+    letter-spacing: 0.035em;
+    cursor: pointer;
+}
+
+.swiper-right {
+    right: 70px;
+    &:hover {
+        transform: translateX(2px);
+    }
+}
+.swiper-left {
+    left: 70px;
+    &:hover {
+        transform: translateX(-2px);
+    }
+}
+.swiper {
+    position: absolute;
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+    border: 1px solid #d9d9d9;
+    // padding: 30px;
+    height: 64px;
+    width: 64px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 420px;
+    border-radius: 50%;
+    color: white;
+
+    font-family: CaviarBold;
+    letter-spacing: 0.035em;
+    cursor: pointer;
+    transition: 300ms ease;
+    &:hover {
+        background-color: #0000002d;
+    }
+
+    svg {
+        // transform: translate(0px, 2px);
+        stroke: white;
+    }
+}
+.swiper-slides {
+    position: absolute;
+    bottom: 40PX;
+    left: 50%;
+    height: 10px;
+    // min-width: 180px;
+    padding: 1em 1.5em;
+    background-color: rgba(255, 255, 255, 0.0264);
+    border-radius: .5em;
+    border: 1px solid rgba(255, 255, 255, 0.088);
+    transform: translate(-50%, 0);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    .pg {
+        margin: 0 18px;
+        height: 8px;
+        width: 8px;
+        border-radius: 100%;
+        background-color: rgba(255, 255, 255, 0.164);
+        cursor: pointer;
+        &.active {
+            background-color: $off-white;
+        }
+    }
+}
+
+.cta-coupon-copy {
+    position: absolute;
+    bottom: 40PX;
+    right: 20px;
+    // height: 100px;
+    // min-width: 80px;
+    padding: .5em 1em;
+    font-size: 18px;
+    color: white;
+    border-radius: .5em;
+    background-color: rgba(255, 255, 255, 0.164);
+    // background-position: 10%;
+    border: 1px solid white;
+    cursor: pointer;
+
+    transition: 300ms ease;
+    &:hover {
+        background-color: rgba(187, 187, 187, 0.164);;
+    }
+
+}
+
+.hero .cta-copy {
+    position: absolute;
+    bottom: 40px;
+    left: 200px;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+
+    font-size: 24px;
+
+    &:hover {
+        color: $mustard;
+        cursor: pointer;
+    }
+}

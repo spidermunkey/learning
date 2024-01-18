@@ -1,0 +1,85 @@
+section .cta-primary {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 91%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 6rem;
+
+    & > .cta-primary__group {
+        height: 100%;
+        max-width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &.ag-wrapper {
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            .ag-wrapper__showcase {
+                height: 500px;
+                width: 500px;
+                background: #ddd;
+
+            }
+        }
+    }
+
+    .copy-section {
+        font-family: Arial, Helvetica, sans-serif;
+
+        &__headline {
+            margin-top: 140px;
+            font-size: 55px;
+            line-height: 60px;
+            & .emp-s {
+                display: block;
+                margin-bottom: 20px;
+                font-size: 40px;
+            }
+            .emp {
+                font-weight: 900;
+                color: $logoGold;
+            }
+            .emp-2 {
+                font-weight: 700;
+                font-style: oblique;
+                color: $liteGold
+            }
+        }
+
+        &__body {
+            font-size: 20px;
+            letter-spacing: 0.035em;
+            line-height: 1.4em;
+        }
+
+        &__cta {
+            box-shadow: 0px -10px 40px -10px rgba(155, 119, 21, 0.3),0px 0px 10px -2px rgba(0, 0, 0, 0.068),-2px 4px 8px 1px rgba(201, 139, 23, 0.055);
+            padding: 32px 24px;
+            width: 100%;
+            background: linear-gradient(-145deg,rgb(15, 120, 177),hsl(205, 100%, 75%),hsl(195, 90%, 80%),white 1%,transparent);
+            background-color: rgba(255, 174, 0, 0.096);
+            border-radius: 20px;
+            font-size: 24px;
+            font-weight: 800;
+            font-style: oblique;
+            color: rgb(80,80,80,92)
+        }
+        
+    }
+
+    .cta-action {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 180px;
+        // background: white;
+    }
+}

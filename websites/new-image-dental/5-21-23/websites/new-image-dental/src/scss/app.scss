@@ -1,0 +1,80 @@
+@import 'reset';
+@import 'colors';
+@import 'dimensions';
+@import 'breakpoints';
+
+@import './sections/header.scss';
+@import './sections/headliner.scss';
+@import './sections/services.scss';
+@import './sections/greeting.scss';
+@import './sections/reviews.scss';
+@import './sections/locale.scss';
+@import './sections/contact.scss';
+@import './sections/navigation.scss';
+
+*,*:before,*:after {
+    position: relative;
+    box-sizing: border-box;
+    font-family: inherit;
+}
+
+html,body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: #fff;
+}
+
+html { overflow: hidden }
+
+body { overflow: scroll }
+
+main,
+footer,
+section { width: 100% }
+
+
+.ctrast {
+    background-color: #f9f9f9;
+}
+
+.contain {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(61, 61, 61, 0.59);
+
+}
+
+footer {
+    margin: 0;
+    padding: 10px 10px 10px 10px;
+    font-size: 24px;
+    font-family: 'Comic neue';
+
+    .foot-bar {
+        display: flex;
+        flex-direction: column;
+        max-height: fit-content;
+        align-items: center;
+        opacity: .8;
+    }
+    .action {
+        display: inline;
+        border-bottom: 1px solid $primaryBlue;
+        height: fit-content;
+        padding-bottom: 4px;
+        font-family: 'Comic neue';
+        margin: 24px 0;
+        // text-decoration: underline;
+    }
+}

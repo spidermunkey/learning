@@ -1,0 +1,127 @@
+.intern {
+    background-color: $grey-300;
+    background-image: url('../assets/dirtgang-texture.png');
+    background-size: 100%;
+    // background-position: 10% 70%;
+    height: calc(40vh + 80px);
+    color: #959390;
+    box-shadow: 0px 1px 80px 4px rgba(134, 78, 14, 0.096),
+                inset 0px 40px 40px 0px rgba(0, 0, 0, 0.719);
+
+    // $grey-100: #f5f5f5;
+    // $grey-200: #f6f6f6;
+    // $grey-300: #f7f7f7;
+    // $grey-400: #cacacb;
+    // $grey-500: #c4c7c8;
+
+    .cta,.cta-2 {
+        position: absolute;
+        top: 42%;
+        font-size: 56px;
+        color:#927243;
+        cursor: pointer;
+    }
+    .cta {
+        right: 8%;
+    }
+    .cta-2 {
+        left: 8%;
+    }
+
+    &:hover {
+        .sub-list ul {
+            transform: translateY(-80px);
+            li {
+                opacity: 1;
+            }
+            & li:after {
+                rotate: -65deg
+            }
+        }
+
+    }
+    .watermark {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background-color: #f7f5f23d;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .texture {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        // background-color: $off-white;
+        // opacity: .6;
+    }
+    .logo-img img {
+        transform: translateY(20px);
+        height: 400px;
+        width: 400px;
+        opacity: .35;
+    }
+    
+
+
+    .sub-list {
+        position: absolute;
+        height: 100%;
+        left: 20%;
+        color: #444244;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        font-family: CaviarBold;
+        // background-color: blue;
+        font-size: 32px;
+        ul {
+
+            transition: 400ms ease-in-out;
+            list-style: none;
+            li {
+                transition: 350ms ease;
+                opacity: 0;
+                width:fit-content;
+                position: relative;
+                margin: 16px 0;
+                border-bottom: 1px solid rgba(83, 74, 59, 0.19);
+                transform: translateY(10px);
+                padding-right:50px;
+                &:first-of-type {
+                    padding-right: 70px;
+                }
+                &:last-of-type {
+                    padding-right: 30px;
+                }
+
+                &::after {
+                    transition: 300ms ease-in-out;
+                    position: absolute;
+                    left:100%;
+                    top: 100%;
+                    content: "";
+                    height: 140px;
+                    width: 20px;
+                    // background-color: black;
+                    border-left: 1px solid rgba(83, 74, 59, 0.19);
+                    transform-origin: top left;
+                    rotate: -95deg;
+                }
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 100%;
+                    left: 100%;
+                    background: #444244;
+                    height: 16px;
+                    width: 16px;
+                    transform: translate(-50%, -50%);
+                    border-radius: 50%;
+
+                }
+            }
+        }
+    }
+}

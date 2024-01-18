@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+<script>
+//Nexus Build Date:2020-09-16 10:54:34 AM EST
+//Nexus Version:f5219c13dab0ea437ab4cecc40555b74a268a20c
+var neo = {
+cdnUrl: 'https://cdn.create.web.com',
+gatewayUrl: 'https://services.create.web.com/gateway',
+mode: 'PUBLISH',
+version: '5.0.3',
+publishDate: '2023/04/18 22:44:05'
+}
+</script>
+
+        <meta charset="UTF-8">
+        <title>COVID-19</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" id="neo-base-css" href="/files/extra/global/neo-base/1.0/neo-base.min.css?695037">
+        <link rel="stylesheet" id="theme-css" href="/files/extra/themes/basic/styles/theme.css?765948">
+        <link rel="stylesheet" id="fonts-generic" href="https://fonts.googleapis.com/css?family=Abril+Fatface|Actor|Alegreya+Sans:400,700|Alegreya:400,700|Amatic+SC:400,700|Architects+Daughter|Archivo+Narrow:400,700|Arvo:400,700|Bangers|Berkshire+Swash|Bevan|Cardo:400,700|Carter+One|Cinzel:400,700|Coming+Soon|Dancing+Script:400,700|Dosis|Droid+Sans:400,700|Droid+Serif:400,700|EB+Garamond:400,700|Eczar:400,700|Gravitas+One|Hind:400,700|Istok+Web:400,700|Italiana|Josefin+Sans:400,700|Josefin+Slab:400,700|Kaushan+Script|Lato:400,700|Lobster+Two:400,700|Lora:400,700|Love+Ya+Like+A+Sister|Lusitana:400,700|Merriweather+Sans:400,700|Merriweather:400,700|Montserrat:400,700|Muli:400,700|Old+Standard+TT:400,700|Open+Sans:400,700|Oswald:400,700|Overlock+SC|PT+Sans:400,700|PT+Serif:400,700|Pacifico|Patua+One|Permanent+Marker|Playfair+Display:400,700|Raleway:400,700|Roboto+Slab:400,700|Roboto:400,700|Roboto+Mono:400,700|Rubik:400,700|Shadows+Into+Light|Stalemate|Tangerine:400,700|Ubuntu:400,700|UnifrakturCook:700|Vollkorn:400,700|Exo:400,600|Source+Sans+Pro:400,600|Julius+Sans+One:400|Monda:400,700|Copse">
+        <link rel="stylesheet" id="fonts-nx" href="https://cdn.create.web.com/global/font-nexus/nx-font.min.css">
+    <style>.theme.basic  { --header-height: 424.1625061035156px; --header-height-collapsed: 90px; --welcome-margin-top: 424.1625061035156px; --nav-height: 60px; --primary-color: rgba(8, 73, 109, 1); --on-dark-color-2: #b8e2fa; --secondary-color: rgba(78, 62, 46, 1); --on-secondary-color: #d9d9d9; --on-secondary-color-2: #b8e2fa; --on-secondary-color-4: #d9d9d9; --on-dark-color-3: #e3d9cf; --on-primary-color-2: #e3d9cf; --accent-color-1: rgba(134, 187, 231, 1); --on-light-color-3: #15446a; --accent-color-2: rgba(186, 125, 36, 1); --on-accent-color-2: #000000; --on-accent-color-2-2: #000000; --on-accent-color-2-3: #000000; --on-light-color-4: #6b4815; --on-primary-color-4: #f3debf; --on-accent-color-1-4: #000000; --header-font: Dancing Script }
+.theme.basic .plugin-ContactsPhone .plugin-Contacts-phone { font-size: 3.2rem; color: var(--accent-color-2) !important; fill: var(--accent-color-2) !important }
+.theme.basic .plugin-ContactsPhone .plugin-Contacts-phone-alt { font-size: 3.2rem; color: var(--accent-color-2) !important; fill: var(--accent-color-2) !important }
+.theme.basic .plugin-ContactsPhone .plugin-Contacts-itemContainer path { font-size: 3.2rem; color: var(--accent-color-2) !important; fill: var(--accent-color-2) !important }
+.theme.basic .plugin-Footer .plugin-Contacts-email { font-size: 1.8rem }
+.theme.basic .plugin-Footer .plugin-Contacts-phone { font-size: 1.8rem }
+.theme.basic .plugin-Footer .plugin-Contacts-phone-alt { font-size: 1.8rem }
+.theme.basic .plugin-Footer .plugin-Contacts-address { font-size: 1.8rem }
+.theme.basic .plugin-Footer .plugin-Logo-text { font-size: 3.0rem }
+.theme.basic #c-k2q4bc12S4KN>a:hover { background-color: var(--secondary-color) !important; color: rgba(255, 255, 255, 1) !important; border-color: var(--accent-color-1) !important }</style>
+<meta property="og:type" content="article">
+<meta property="og:title" content="COVID-19">
+<meta property="og:description" content="Dear Patients and Friends of New Image Dental, The spread of coronavirus (COVID-19) is on all our minds and in the news. We’d like to reassure you that New Image Dental has been…">
+<meta property="og:image" content="http://www.newimagedentaldds.com/files/2048_ec34b44e15ba372cb84f1f435fcf6b26.jpg">
+<link id="favicon-link" rel="shortcut icon" href="https://cdn.create.web.com/global/neo-base/1.0/img/favicon/webcom.png">
+<meta name="description" content="Dear Patients and Friends of New Image Dental, The spread of coronavirus (COVID-19) is on all our minds and in the news. We’d like to reassure you that New Image Dental has been…">
+<meta name="generator" content="Web.com Website Builder"></head>
+
+    <body class="theme basic page-blog_post">
+        <!-- // Header Block // -->
+        <div class="neo-header-block-1"><div class="plugin-Blog-postHeader"><a href="/new-image-dental-community-information" class="plugin-Blog-backLink"><span class="plugin-Blog-chevron"></span>Website</a></div></div>
+        <!-- // Page Content // -->
+        <div class="neo-page-content"><section class="neo-blog-title plugin-Section is-first" style="background: url(https://cdn.create.web.com/images/industries/common/images/blog-title-bg.jpg) center / cover no-repeat" id="c-k7vm7ruri571"><div class="background-overlay" style="position: absolute; top: 0; right: 0; bottom: 0; left: 0; z-index: 0; background: rgba(0, 0, 0, 0.33)"></div><div class="Container"><div class="flex-container flex-container--center flex-container--nowrap"><div class="flex-column flex-column--100"><div class="neo-element plugin-Text v-marginBottom5 v-textCenter" id="c-k7vm7rwvX8H5"><h1>COVID-19</h1></div></div></div></div><p class="plugin-Blog-dateStamp">March 17, 2020</p></section><section class="neo-blog-body plugin-Section" id="c-k7vm7rx9lqdj"><div class="Container"><div class="flex-container flex-container--center flex-container--nowrap"><div class="flex-column flex-column--33"><div class="neo-element plugin-Image v-textCenter" id="c-k7vm7ry2OsDb" data-version="2.0.0"><img src="/files/2048_ec34b44e15ba372cb84f1f435fcf6b26.jpg" class=""></div></div><div class="flex-column flex-column--66"><div class="neo-element plugin-Text v-marginBottom30" id="c-k7vm7ryxZd5N"><p>Dear Patients and Friends of New Image Dental,</p><p>&nbsp;</p><p>The spread of coronavirus (COVID-19) is on all our minds and in the news. We’d like to reassure you that New Image Dental has been monitoring this situation closely to ensure we can meet the ongoing needs of our patients. At the moment New Image Dental will remain open to service and meet the needs of our dental patients. If there is a change you will be informed via email or text.</p><p>Infection control procedures are actions taken in health care settings to prevent the spread of disease everyday. The&nbsp;<u>Centers for Disease Control and Prevention</u>&nbsp;has recommendations for dental office infection control. Here at New Image Dental we care about your safety and work hard to prevent the spread of infection. Before you enter any of our examining rooms, all surfaces, such as the dental chair, dental light, drawer handles and countertops, have been cleaned and disinfected. We cover some equipment with protective covers, which are replaced after each patient. </p><p>Non-disposable items like the dental tools are cleaned and sterilized between patients. Disposable dental tools and needles are never reused. Infection control precautions also require all dental staff involved in patient care to use appropriate protective equipment such as gloves, masks, gowns and eyewear when needed. After each patient, disposable gloves and masks are thrown away. Before seeing the next patient, everyone on the treatment team washes their hands and put on a new pair of gloves.<br> <!--[if !supportLineBreakNewLine]--><br> <!--[endif]--></p><p>We want to share with you some extra steps we are taking to help protect our patients and employees. We have added additional reception area wipe downs per day. This also applies to our bathrooms, reception area counters and I Pad for in taking new patients. We are asking any patient that shows signs of a cold or flu like symptoms to stay home and reschedule. </p><p><br> At New Image Dental your well-being is important to your us. That’s why infection control procedures are in place at all times.</p><h1 class="v-fontSize-responsive--s"><span style="font-size: 3.6rem;">What about the new coronavirus?</span></h1><p>With so many news stories, it’s understandable to be concerned about the new coronavirus that causes COVID-19. Please know that the precautions New Image Dental already takes every day to prevent the spread of infection in our practice also helps prevent the spread of COVID-19.&nbsp;</p><p><b>If you are ill with flu-like symptoms, you should reschedule your appointment.&nbsp;</b></p><p><b>If you or someone you are in close contact with have recently traveled to one of the countries with large outbreaks of COVID-19 (China, Italy, Iran, South Korea) or if you have been exposed to someone else who was diagnosed with COVID-19 or who was quarantined as a precaution, wait 14 days until you see your dentist to make sure you have not caught the coronavirus.&nbsp;</b></p><p><b>If you are healthy, there’s no need to cancel your regularly scheduled dental appointment.</b></p><p>It’s important to know that the majority of people infected with the coronavirus experience flu-like symptoms and then recover. Most people do not develop serious respiratory complications.&nbsp;</p><p>Those most at risk of becoming seriously ill are elderly people and those with underlying medical conditions such as diabetes and kidney disease, among others. Children, thus far, have been largely unaffected.</p><p>Here are a few things you can do on your own to help keep yourself and those around you healthy:</p><p 2cxspfirst=""><!--[if !supportLists]-->·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <!--[endif]--><b>Wash your hands frequently</b>, or use a hand sanitizer with at least 60 percent ethyl alcohol.</p><p 2cxspmiddle=""><!--[if !supportLists]-->·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <!--[endif]-->Avoid touching your face, eyes or nose&nbsp;to reduce the spread of germs.</p><p 2cxspmiddle=""><!--[if !supportLists]-->·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <!--[endif]--><b>Cover your cough or sneeze with your elbow.</b>&nbsp;Infections like the coronavirus spread through the tiny droplets in coughs and sneezes.&nbsp;</p><p 2cxsplast=""><!--[if !supportLists]-->·&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <!--[endif]--><b>Stay home if you feel sick.</b>&nbsp;If you have flu-like symptoms or otherwise feel unwell, stay home and rest. Call your dentist to reschedule your appointment for a later date. This will reduce the risk of spreading your illness.</p><p>Visit&nbsp;<u>the CDC’s website</u>&nbsp;for the latest information on COVID-19.&nbsp;&nbsp;</p><p>&nbsp;</p><p>We are here for you</p><p>If you have any questions please feel free to call</p><p>&nbsp;</p><p>                        </p><p>Dr. Richard Cutler DDS</p></div><div class="neo-element plugin-Text v-marginBottom30" id="c-k7vm7rypprKI"><h3 class="v-fontWeightNormal"><br></h3></div></div></div></div></section>
+<!--WSP_SC-->
+<script type="text/javascript">
+<!--
+document.write('<'+'img style="position:fixed;" src="//scorecard.wspisp.net/logger.php'+'?tag=dW5waWQ6MjMzOTA3MDI7d2ViY29tZGlmbQ%3D%3D&ref='+document.referrer+'&x='+Math.random()+'" '+'width="1" height="1" alt="" '+'>');
+//-->
+</script>
+<noscript><img style="position:fixed;" src="//scorecard.wspisp.net/logger.php?tag=dW5waWQ6MjMzOTA3MDI7d2ViY29tZGlmbQ%3D%3D" width="1" height="1" alt=""></noscript>
+<!--/WSP_SC-->
+</div>
+        <!-- // Footer Block // -->
+        <div class="neo-footer-block-1"><footer class="plugin-Footer neo-footer plugin-Section" id="c-k2q4bc2mOwfa">
+    <div class="flex-container flex-container--space-around plugin-Footer-container">
+        <div class="flex-column flex-column--25 plugin-Footer-column v-overflowHidden">
+            <div class="plugin-Logo plugin-Logo--footer neo-logo v-expandHeight v-textCenter js-footerLogoEl neo-element plugin-Logo--noImage" id="c-k2q4bc2rbClv">
+                <a class="plugin-Logo-link" href="/">
+                    
+                    <p class="plugin-Logo-text v-fontSize-responsive--xs" data-token-text="{company-name}">New Image Dental</p>
+                </a>
+            </div>
+        </div>
+        
+        <div class="flex-column flex-column--25 plugin-Footer-column">
+            <div class="plugin-ContactsFooter v-textCenter v-expandHeight js-footerAddressEl neo-element" id="c-k2q4bc2t78QE">
+                <p class="plugin-Contacts-address v-fontSize-responsive--xs">
+                    <span data-token-text="{address}">2100 Pioneer Ave</span>
+                    <span data-token-text="{address2}"></span>
+                </p>
+                <p class="plugin-Contacts-address v-fontSize-responsive--xs">
+                    <span class="js-pluginContactAddressCity" data-token-text="{city}">Cheyenne</span>
+                    <span class="js-pluginContactAddressComma">,</span>
+                    <span class="js-pluginContactAddressState" data-token-text="{state}">WY</span>
+                    <span data-token-text="{zip-code}">82001</span>
+                </p>
+                <div class="plugin-Contacts-contactContainer">
+                    <a class="plugin-Contacts-phone v-fontSize-responsive--xs v-encrypted" href="dGVsOigzMDcpIDIyMi0xMDAy" aria-label="Phone Number" data-token-href="tel:{phone-number}" data-token-text="{phone-number}">KDMwNykgMjIyLTEwMDI=</a>
+                    
+                    
+                </div>
+            </div>
+        </div>
+        <div class="flex-column flex-column--25 plugin-Footer-column">
+            <div class="plugin-Social v-expandHeight v-textCenter js-footerSocialEl neo-element" id="c-k2q4bc2tPeWd">
+                <div class="plugin-Social-iconContainer">
+                    <a rel="nofollow" class="plugin-Social-link" target="_blank" title="Facebook" aria-label="Facebook Social Link" data-token-href="{facebook-social-link}" href="https://www.facebook.com/NewImageDentalDDS/">
+                        <img class="plugin-Social-icon" alt="Facebook" src="https://cdn.create.web.com/global/neo-base/1.0/img/facebook.svg" style="height: 30px; width: 30px;">
+                    </a>
+                    
+                    <a rel="nofollow" class="plugin-Social-link" target="_blank" title="Instagram" aria-label="Instagram Social Link" data-token-href="{instagram-social-link}" href="https://www.instagram.com/newimagedentaldds/">
+                        <img class="plugin-Social-icon" alt="Instagram" src="https://cdn.create.web.com/global/neo-base/1.0/img/instagram.svg" style="height: 30px; width: 30px;">
+                    </a>
+                    
+                    
+                    <a rel="nofollow" class="plugin-Social-link" target="_blank" title="YouTube" aria-label="YouTube" data-token-href="{youtube-social-link}" href="https://www.youtube.com/channel/UCWe24Z65LgJMnw3SIg5IdQQ/videos">
+                        <img class="plugin-Social-icon" alt="YouTube" src="https://cdn.create.web.com/global/neo-base/1.0/img/youtube.svg" style="height: 30px; width: 30px;">
+                    </a>
+                    
+                    
+                    
+                    
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+</div>
+        <script src="https://cdn.create.web.com/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script id="neo-base-js" src="https://cdn.create.web.com/global/neo-base/1.0/neo-base.min.js?c7639c"></script>
+    </body>
+</html>

@@ -1,0 +1,91 @@
+.services {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    &__panels {
+        justify-content: center;
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+}
+
+.services__panels--panel {
+    --width: 100%;
+    position: relative;
+    height: 280px;
+    width: var(--width);
+    border-radius: 20px 48px 12px 32px;
+
+    // border:2px solid aliceblue;
+    box-shadow: rgba(50,50,93,.25) 0 13px 27px -5px,rgba(0,0,0,.3) 0 8px 16px -8px;//rgba(50,50,93,.25) 0 13px 27px -5px,rgba(0,0,0,.3) 0 8px 16px -8px;
+    margin: 8px;
+    overflow: hidden;
+
+    .content-card {
+        position: absolute;
+        z-index: 1;
+
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        border-radius: inherit;
+        display: flex;
+        opacity: 0;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+        line-height: 20px;
+        font-family: 'Ubuntu';
+
+        .copy {
+            transition: transform 150ms linear 100ms;
+
+            transform: translateY(25px);
+        }
+
+    }
+    .cover {
+        z-index: 20;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        background: $primaryBlue;
+        transition: all 400ms ease-in-out 50ms;
+
+        .content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &.stack {
+                flex-direction: column;
+            }
+            .icon img {
+                height: 80px;
+                width: 80px;
+            }
+            .label {
+                text-align: center;
+                margin-top: 16px;
+                font-size: 32px;
+                font-family: 'Comic Neue'
+            }
+        }
+        &:hover {
+            background-color: transparent;
+            opacity: 0;
+            & + .content-card {
+                opacity: 1;
+            }
+            & + .content-card .copy {
+                transform: translate(0);
+            }
+        }
+    }
+}

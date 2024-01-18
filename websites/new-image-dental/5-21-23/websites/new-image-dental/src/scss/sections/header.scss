@@ -1,0 +1,197 @@
+@import '../components/floating-action-buttons';
+
+header {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    // background: blue;
+    background: url('/src/images/senior-hero.jpg') 50% 25% / cover no-repeat;
+    // transition: 300ms ease;
+}
+
+.overlay-header {
+    z-index: 1;
+}
+
+// .fab-bar {
+//     bottom: 30px;
+//     right: 250px;
+//     flex-direction: row;
+//     padding-bottom: 0;
+//     gap: 0;
+// }
+// .fab {
+//     backdrop-filter: blur(40px);
+//     margin: 0;
+//     transform: scale(.8);
+// }
+.header {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    padding-top: 40px;
+
+}
+
+.highlighter {
+    width: 100%;
+    height: 100%;
+    padding-top: 60px;
+    z-index: 50;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    transition: all 400ms ease;
+    // background-color: #cccccc25;
+    .slide {
+        transition: all 300ms ease;
+        span {
+            transition: all 200ms ease;
+            font-family: 'Montserrat';
+            color: #eee;
+            font-size: 72px;
+
+            line-height: 1.2;
+            font-weight: 600;
+            display: block;
+        }
+        .cta {
+            font-family: 'Bevan';
+            font-weight: 700;
+            font-size: 20px;
+            padding: 16px 20px;
+            margin-top: 10px;
+            display: inline-flex;
+            border: 1px solid rgb(255, 211, 144);
+            color: navajowhite;
+            background-color: rgba(255, 255, 255, 0.05);
+            letter-spacing: .025em;
+            backdrop-filter: blur(20px);
+            border-radius: 8px;
+            cursor:pointer;
+
+            &:hover {
+                background-color: rgba(0, 0, 0, 0.164);
+            }
+        }
+
+
+    }
+}
+
+.slide-show {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.13);
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+
+    // clip-path: polygon(0 0, 0% 100%, 100% 100%);
+    // background-color: #fff;
+    padding: 60px 25px;
+    padding-bottom: 0;
+    padding-left: 0;
+    .slide {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        justify-content: center;
+        z-index: 1;
+        border-radius: 8px;
+        padding: 80px 25px 40px 25px;
+        color:rgb(245, 189, 105);
+        border-radius: 0 150px 50px 0;
+    }
+    .slide.we-care {
+        height: 100%;
+        margin-left: 80px;
+
+        // clip-path: polygon(0 0, 0% 100%, 100% 100%);
+        .slide-title-card {
+            flex-direction: column;
+            display: inline-flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            font-family: 'Bevan';
+            color: $primaryBlue;
+            font-size: 58px;
+            span {
+                text-align: center;
+                white-space: nowrap;
+            }
+        }
+        .cta {
+            font-family: 'Bevan';
+            font-weight: 700;
+            font-size: 20px;
+            padding: 16px 20px;
+            margin-top: 10px;
+            width: max-content;
+            display: inline-flex;
+            border: 1px solid rgb(255, 211, 144);
+            background-color: rgba(0, 0, 0, 0.096);
+            letter-spacing: .025em;
+            backdrop-filter: blur(20px);
+            border-radius: 8px;
+        }
+        // border: 2px solid $logoGold;
+    }
+}
+
+@media (max-width: $breakpoint-laptop) {
+    header {
+        height: 70vh;
+    }
+}
+
+@media (max-width: $breakpoint-tablet) {
+    .highlighter .slide span {
+        font-size: 56px;
+    };
+}
+
+@media (max-width: $breakpoint-mobile) {
+    .highlighter .slide span {
+        font-size: 42px;
+        line-height: 1.35;
+    }
+    .highlighter .slide .cta {
+        font-size: 18px;
+    }
+    header {
+        height: 70vh;
+    }
+}
+
+@media (max-width: $breakpoint-small) {
+    .highlighter .slide span {
+        font-size: 32px;
+    }
+    .highlighter .slide .cta {
+        font-size: 16px;
+        padding: 12px 10px;
+    }
+}
+
+@media (max-width: $breakpoint-xs) {
+    .highlighter .slide span {
+        font-size: 28px;
+    }
+    .highlighter .slide .cta {
+        padding: 8px;
+        font-size: 13px;
+        font-weight: 400;
+    }
+}
+
+@media (max-width: $breakpoint-tiny) {
+    .highlighter .slide span {
+        font-size: 24px;
+    }
+}

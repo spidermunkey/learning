@@ -1,0 +1,183 @@
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: transparent;
+    transition: background-color .3s ease-in-out,box-shadow .3s ease-in-out,-webkit-box-shadow .3s ease-in-out;
+    z-index: 100;
+    .nav-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 18px 24px;
+    }
+
+    .nav-menu {
+        position: absolute;
+        background-color: black;
+        height: 400px;
+        width: 100%;
+        top: 100%;
+        left: 0;
+        right: 0;
+        opacity: 0;
+        transition: opacity .3s ease-in-out;
+
+        .menu-wrapper {
+            width: 800px;
+            height: 80%;
+            border-left: 1px solid #dddddd50;
+            border-right: 1px solid #dddddd50;
+            margin: 20px auto;
+
+            .menu {
+                position: absolute;
+                opacity: 0;
+                transition: opacity 300ms ease-in-out;
+                &.active {
+                    opacity: 1;
+                }
+            }
+            .menu-label {
+                margin-top: 10px;
+                margin-bottom: 20px;
+                width: 100%;
+                text-align: center;
+                font-size: 20px;
+            }
+            .menu-section {
+                display: flex;
+            }
+
+            .menu-panel {
+                margin: 0 20px;
+            }
+            .section-label {
+                margin: 10px 0;
+                padding: 0 20px;
+                font-family: 'CaviarBold';
+            }
+
+            ul {
+                margin: 0;
+                padding: 20px;
+                list-style: none;
+                li {
+                    margin: 10px auto;
+                }
+            }
+            .best-sellers,
+            .new {
+                .section-label {
+                    margin-top: 0;
+                    display: block;
+                    text-align: center;
+                    width: 100%;
+                }
+                height: 100%;
+                width: 200px;
+                // border: 1px solid #ddd;
+
+                img {
+                    aspect-ratio: .8;
+                    width: 200px;
+                }
+            }
+        }
+    }
+
+    .logo img {
+        height: 40px;
+        width: 40px;
+    }
+
+    .logo.lite {
+        display: none;
+    }
+
+    &.active,
+    &:hover {
+        background-color: black;
+        // background-color: #1f1e1d;
+        box-shadow: 0 -1px #262626 inset;
+        .logo.dark {
+            display: none;
+        }
+        .logo.lite {
+            display: block
+        }
+        & ,& .handles .search, .nav-links .link {
+            color: white;
+        }
+
+        .handles .search {
+            rotate: 15deg;
+        }
+    }
+    .logo-wrapper {
+        display: inline-flex;
+    }
+
+    .nav-links {
+        display: inline-flex;
+        // background-color: blue;
+        font-family: CaviarBold;
+        font-size: 16px;
+        margin-left: 75px;
+        .link {
+            margin: 10px 16px;
+            transition: color 120ms ease-in-out;
+            color: #363636;
+            text-transform: uppercase;
+            letter-spacing: 0.035em;
+            &:hover {
+                cursor: pointer;
+                color: $mustard;
+            }
+        }
+        &:hover ~ .nav-menu {
+            opacity: 1;
+        }
+
+    }
+
+    .handles {
+        display: inline-flex;
+        align-items: center;
+        color: #363636;
+        .search {
+            color: #363636;
+            margin-right: 16px;
+            transition: rotate 400ms ease-in-out;
+
+        }
+        .search svg {
+            height: 24px;
+            width: 24px;
+            fill: currentColor;
+        }
+        .cart {
+    
+            border: 1px solid #d9d9d9;
+            border-top-color: rgb(217, 217, 217);
+            border-right-color: rgb(217, 217, 217);
+            border-bottom-color: rgb(217, 217, 217);
+            border-left-color: rgb(217, 217, 217);
+            border-radius: .5em;
+            padding: .2em .5em;
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+            background: #FFFFFF;
+            
+            .icon {
+                margin-right: .5em;
+            }
+
+        }
+    }
+
+
+    
+}

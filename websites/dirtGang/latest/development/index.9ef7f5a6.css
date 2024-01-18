@@ -1,0 +1,34 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+body:after {
+  content: "";
+  opacity: .2;
+  background-image: url("dirtgang-texture.36bd915d.png");
+  background-size: cover;
+  position: absolute;
+  inset: 0;
+}
+
+body .logo {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+body .logo img {
+  opacity: .76;
+  width: 450px;
+  height: 500px;
+  margin-right: 60px;
+  transition: all .42s;
+}
+
+/*# sourceMappingURL=index.9ef7f5a6.css.map */

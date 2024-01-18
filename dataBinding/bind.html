@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="desc">
+        <h1>Vanilla Databinding</h1>
+        <p>
+            I found this function <a href="https://www.atmosera.com/blog/data-binding-pure-javascript/">here</a> in an attempt to understand how databinding really works before jumping into a framework or library like svelte or react.
+            <p>This is ment to be a preliminary excercise before diving deeper into the features and methods various framework authors approach the subject.</p>
+            <pre>
+                function HTMLBinding(b) {
+
+                    this.elementBindings = [];
+                    this.value = b.object[b.property]
+                
+                    this.valueGetter = () => {
+                        return this.value;
+                    }
+                
+                    this.valueSetter = (val) => {
+                        this.value = val;
+                        this.elementBindings
+                            .forEach(binding => binding[binding.attribute] = val);
+                    }        
+                
+                    this.addBinding = (element,attribute,event) => {
+                        const binding = {
+                            element,
+                            attribute,
+                        }
+                
+                        if (event)
+                            element.addEventListener(
+                                event, 
+                                () => this.valueSetter(element[attribute]))
+                        
+                        binding.event = event;
+                        this.elementBindings.push(binding)
+                        element[attribute] = this.value;
+                        return this;
+                    }
+                
+                    Object.defineProperty(b.object,b.property, {
+                        get: this.valueGetter,
+                        set: this.valueSetter
+                    });
+                
+                    b.object[b.property] = this.value;
+                
+                }
+            </pre>
+        </p>
+    </div>
+    <div class="section">
+        <h2>The Exercises</h2>
+        <p>
+            <ul>
+                
+                <li>
+                    <h3>Input Fields</h3>
+                    <ol>
+                        <li>
+                            Create an form that binds its value to a user bio element
+                        </li>
+                        <li>
+                            Then a button that on save grabs that form data, using it to interact with and update multiple elements
+                        </li>
+                        <li>
+                            Bind the button state [enabled/disable] to validation rules within the form
+                        </li>
+                    </ol>
+
+                </li>
+
+                <li>
+                    <h3>Product Templates</h3>
+                    <ol>
+                        <li>
+                            Create three separate product representations syncing the following data across each one
+                                <ol>
+                                    <li>Image</li>
+                                    <li>Price</li>
+                                    <li>Description</li>
+                                    <li>Name</li>
+                                </ol>
+                        </li>
+                        <li>
+                            Create an admin like feature panel/pop-up that allows you to update the name, description, and image across all of them
+                        </li>
+                    </ol>
+
+                </li>
+
+                <li>
+                    <h3>Tab Handler</h3>
+                    <ol>
+                        <li>Create a ui component that displays and updates the following based on which tab is clicked</li>
+                        <ol>
+                            <li>Tab Name</li>
+                            <li>Sub Links</li>
+                            <li>Tab Copy</li>
+                        </ol>
+                    </ol>
+                </li>
+
+
+            </ul>
+        </p>
+    </div>
+
+    <div class="solution form">
+        <div class="form">
+            <form action="#">
+
+                <div class="form-field profile-pic">
+                    <label for="avatar">Profile Image</label>
+                    <input type="file">
+                </div>
+                <div class="form-field name">
+                    <label for="name">Name</label>
+                    <input type="text" id="name">
+
+                </div>
+                
+                <div class="form-field age">
+                    <label for="uName">Username</label>
+                    <input type="text" id="uName">
+                </div>
+
+                <div class="form-field bio">
+                    <label for="bio">Bio</label>
+                    <textarea name="bio" id="bio">
+
+                    </textarea>
+                </div>
+                
+                <div class="form-field gender">
+                    <div class="label-heading">
+                        <span>Gender</span>
+                    </div>
+                    <div class="options">
+                        <div class="option">
+                            <label for="male">Male</label>
+                            <input type="radio" name="gender" id="male"/>
+                        </div>
+                        <div class="option">
+                            <label for="female">Female</label>
+                            <input type="radio" name="gender" id="female"/>
+                        </div>
+                        <div class="option">
+                            <label for="custom">Custom</label>
+                            <input type="radio" name="gender" id="custom"/>
+                        </div>
+                        <div class="option">
+                            <label for="noComment">Prefer Not to Say</label>
+                            <input type="radio" name="gender" id="noComment" checked />
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="submit">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="main.js" type="module"></script>
+</html>

@@ -1,0 +1,33 @@
+section.best-sellers {
+    box-shadow: 0px -10px 10px 0px rgba(0, 0, 0, 0.103);
+    border-bottom: 1px solid #dddddd;
+
+}
+
+.best-sellers .prod-wrapper img {
+    height: 300px;
+    width: 300px;
+}
+
+.best-sellers .prod-wrapper {
+    margin: 10px 50px;
+    .copy {
+        margin-top: 3dvb;
+        text-align: center;
+
+    }
+    .tagLine {
+        font-size: 22px;
+        margin: 8px 0;
+    }
+
+    .title {
+        font-size: 32px;
+    }
+    .price {
+        color: #353535be;
+        margin: 8px 0;
+        font-family: CaviarBold;
+    }
+
+}

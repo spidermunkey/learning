@@ -1,0 +1,80 @@
+.solo-reel {
+    .prod-reel {
+        padding-top:40px ;
+        display: flex;
+        justify-content: center;
+        .swipe-left {
+            left: 140px;
+        }
+        .swipe-right {
+            right: 140px;
+        }
+    }
+    .product {
+        // background-color: black;
+        min-width: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 40px;
+        .copy {
+            color: #454545a6;
+            .tagLine {
+                font-size: 22px;
+            }
+            .title {
+                font-size: 32px;
+                font-family: CaviarBold;
+                color: #454545e8;
+
+            }
+            .price {
+                font-size: 20px;
+            }
+            .see-more {
+                margin-top: 24px;
+                display: inline-block;
+                color: #454545;
+                font-size: 18px;
+                font-family: CaviarBold;
+                padding: .5em 1em;
+                border-radius: .5em;
+                background: #0988ffe0;
+
+                border: 1px solid #d9d9d9;
+                border-top-color: rgb(217, 217, 217);
+                border-right-color: rgb(217, 217, 217);
+                border-bottom-color: rgb(217, 217, 217);
+                border-left-color: rgb(217, 217, 217);
+                border-radius: .5em;
+                box-shadow: 0px 0px 40px -10px rgba(0, 0, 0, .1529);
+                // padding: .2em .5em;
+                // display: flex;
+                // align-items: center;
+                // font-size: 14px;
+                background: #FFFFFF;
+
+            }
+        }
+    }
+    .prod-img img {
+        height: 200px;
+        width: 240px;
+    }
+    .img {
+        display: inline-block;
+        position: relative;
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.1)
+        }
+        img {
+            height: 550px;
+            width: 600px;
+        }
+    }
+}

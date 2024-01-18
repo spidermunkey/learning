@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dental Office | Cheyenne </title>
+        <link rel="stylesheet" href="../src/scss/app.scss">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bevan:ital@0;1&family=Comic+Neue:wght@700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;1,100;1,300&family=Ubuntu:ital,wght@0,300;0,400;0,700;1,300&family=Wix+Madefor+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+        
+        <script>
+                // HELPER FUNCTIONS
+                var $ = (arg,element = document) => element.querySelector(arg)
+                var $$ = (arg,element = document) => Array.from(element.querySelectorAll(arg));
+                var log = (...args) => console.log.apply(this,args);
+                var err = (...args) => console.log.call(this,args);
+        </script>
+
+    </head>
+
+    <body>
+        <header>
+
+            <div class="overlay overlay-header"></div>
+            <nav class="premium">
+                <div class="navbar contain contain-navbar">
+                    <div class="logo">
+                        <a href="#top">
+                            <img class="logo__img" src="../src/images/logo-words.png" alt="">
+                        </a>
+                    </div>
+                    <div class="nb-links">
+
+                        <div class="fg fg-r">
+                            <div class="navbar__link">
+                                <div class="navbar__link--label hot-link">SERVICES</div>
+                                <div class="navbar__link--menu sm-services">
+                                    <div class="menu services">
+                                        <div class="flex-group">
+                                            <div class="flex-column services-column">
+                                                <div class="service">
+                                                    <div class="icon">
+                                                        <img src="../src/images/icons/icons8-dental-91(2).png" alt="">
+                                                    </div>
+                                                    <div class="label">Flouride Treatment</div>
+                                                </div>
+            
+                                                <div class="service">
+                                                    <div class="icon t">
+                                                        <img src="../src/images/icons/icons8-loose-tooth-64.png" alt="">
+                                                    </div>
+                                                    <div class="label">Tooth Extractions</div>
+                                                </div>
+            
+                                                <!-- <div class="service">
+                                                    <div class="icon">
+                                                        <img src="../src/images/icons/icons8-dental-64(4).png" alt="">
+                                                    </div>
+                                                    <div class="label">Digital X-Ray</div>
+                                                </div> -->
+            
+                                                <div class="service">
+                                                    <div class="icon">
+                                                        <img src="../src/images/icons/icons8-dental-filling-64.png" alt="">
+            
+                                                    </div>
+                                                    <div class="label">Sealants</div>
+                                                </div>
+            
+                                                <div class="service">
+                                                    <div class="icon">
+                                                        <img src="../src/images/icons/icons8-dental-64(6).png" alt="">
+                                                    </div>
+                                                    <div class="label">Crowns & Bridges</div>
+                                                </div>
+            
+                                                <div class="service">
+                                                    <div class="icon">
+                                                        <img src="../src/images/icons/icons8-decayed-tooth-91.png" alt="">
+                                                    </div>
+                                                    <div class="label">Composite Filling</div>
+                                                </div>
+            
+                                            </div>
+            
+                                            <div class="flex-column services-column">
+            
+                                                <div class="service">
+                                                    <div class="icon">
+                                                        <img src="../src/images/icons/icons8-baby-stroller-50.png" alt="">
+            
+                                                    </div>
+                                                    <div class="label">Pediatric Care</div>
+                                                </div>
+            
+                                                <div class="service">
+                                                    <div class="icon o">
+                                                        <img src="../src/images/icons/icons8-dental-veneer-64.png" alt="">
+                                                    </div>
+                                                    <div class="label">Veneers</div>
+                                                </div>
+            
+                                                <div class="service">
+                                                    <div class="icon o">
+                                                        <img src="../src/images/icons/icons8-dental-64(7).png" alt="">
+                                                        
+                                                    </div>
+                                                    <div class="label">Dentures & Partials</div>
+                                                </div>
+            
+                                                <div class="service">
+                                                    <div class="icon t">
+                                                        <img src="../src/images/icons/icons8-root-canal-64.png" alt="">
+                                                    </div>
+                                                    <div class="label">Root Canal</div>
+                                                </div>
+            
+                                                <div class="service">
+                                                    <div class="icon t">
+                                                        <img src="../src/images/icons/icons8-dental-care-66.png" alt="">
+                                                        
+                                                    </div>
+                                                    <div class="label">Periodontal Care</div>
+                                                </div>
+            
+                                            </div>
+            
+                                            <div class="flex-column">
+            
+                                                <span class="menu-label">Our Services</span>
+                                                <div class="exerpt">
+                                                    <p>It is our mission to offer the finest in dental services, our entire team is dedicated to providing you with the personalized, gentle care that you and your family deserve.</p>
+                                                    <p>Count on us to for a wide range of services using state-of-the-art materials and technology in the area of 3D Pano imaging, same day crowns, and the latest in laser technology.</p>
+                                                </div>
+                                                <div class="see-more">See More</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- Free Energy Exam plus X-Ray -->
+                                <!-- Invisalign Consulting -->
+                                <!-- Teledentistry -->
+                                <!--  -->
+                            </div>
+                            <div class="navbar__link" data-nlink="new-patient">
+                                <div class="navbar__link--label hot-link">NEW PATIENT</div>
+                                <div class="navbar__link--menu">
+                                    <div class="menu new-patient">
+                                        <div class="flex-group">
+                                            <div class="new-patient__links">
+                                                <div class="flex-column">
+                                                    <div class="option">New Patient Forms</div>
+            
+                                                    <div class="option">First Visit Information</div>
+                            
+                                                    <div class="option">Financing & Payments</div>
+                
+                                                </div>
+            
+                                                <div class="see-more">Make an Appoinment</div>
+                                                
+                                            </div>
+                                            <div class="flex-column">
+                                                <div class="menu-label">Emergency?</div>
+                                                <div class="exerpt">
+                                                    <p>Dental emergencies are not only painful; they can also be frightening. In most cases, prompt treatment is required to alleviate pain and ensure the patient's oral and overall health.<p>
+            
+                                                        <p>If you're dealing with a dental emergency, call us immediately at <span class="emp">(307) 222-1002</span>, and we will schedule you in as soon as possible for an emergency dental treatment in Cheyenne, WY.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="navbar__link">
+                                <div class="navbar__link--label hot-link">CONTACT</div>
+                                <div class="navbar__link--menu sm-contact">
+            
+                                    <div class="menu contact" id="nm-contact">
+                                        <div class="flex-group">
+                                            <div class="flex-column">
+            
+                                                <div class="exerpt">
+                                                    <div class="menu-title">We'd Love To Hear From You!</div>
+                                                    <p>Nothing is more important to us than helping you achieve impeccable oral health and the beautiful smile you deserve. Whether you are a new or existing patient, feel free to contact us with any questions or to schedule an appointment at our dental office in Cheyenne, WY.</p>
+                                                </div>
+            
+                                                <div class="addrs">
+                                                    <div class="tele">
+                                                        <div class="tele__label">
+                                                            <div class="icon">
+                                                                <img src="../src/images/icons/icons8-phone-50.png" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <span class="tele__number  addr-label">(307) 222 1002</span>
+                                                    </div>
+                                                    <div class="mail">
+                                                        <div class="mail__label">
+                                                            <div class="icon">
+                                                                <img src="../src/images/icons/icons8-mail-50.png" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <span class="mail__addr addr-label" >info@newimagedental.com</span> 
+                                                    </div>
+                                                    <div class="location">
+                                                        <div class="location__label">
+                                                            <div class="icon">
+                                                                <img src="../src/images/icons/icons8-location-50.png" alt="">
+                                                            </div>
+                                                        </div>
+                                                        <span class="location__addr addr-label"> 2100 Pioneer Ave | Cheyenne , WY 82001 </span> 
+                                                    </div>
+                                                </div>
+            
+            
+                                            </div>
+                                            <div class="flex-column">
+                                                <div class="menu-label">Hours of Operation</div>
+                                                <div class="hours">
+                                                    <div class="day">
+                                                        <span class="day__name">Monday</span>
+                                                        <div class="day__hours text-passive">8:00 AM -- 5:00 PM</div>
+                                                    </div>
+                                                    <div class="day">
+                                                        <span class="day__name">Tuesday</span>
+                                                        <div class="day__hours text-passive">8:00 AM -- 5:00 PM</div>
+                                                        <!-- <div class="day__note">Last appointment at 5:00</div> -->
+                                                    </div>
+                                                    <div class="day">
+                                                        <div class="day__name">Wednesday</div>
+                                                        <div class="day__hours text-passive">9:00 AM -- 2:00 PM</div>
+                                                    </div>
+                                                    <div class="day">
+                                                        <div class="day__name">Thursday</div>
+                                                        <div class="day__hours text-passive">7:00 AM -- 3:00 PM</div>
+                                                    </div>
+                                                    <div class="day">
+                                                        <div class="day__name">Friday</div>
+                                                        <div class="day__hours text-passive">Closed</div>
+                                                        <!-- <div class="day__note">Open Starting May 2023</div> -->
+                                                    </div>
+                                                    <div class="day">
+                                                        <div class="day__name">Saturday</div>
+                                                        <div class="day__hours text-passive closed">Closed</div>
+                                                    </div>
+                                                    <div class="day">
+                                                            <div class="day__name">Sunday</div>
+                                                            <div class="day__hours text-passive closed">Closed</div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                    </div>
+            
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="navbar__link">
+                                <div class="navbar__link--label hot-link">COMMUNITY</div>
+                            </div>
+                            <div class="navbar__link">
+                                <div class="navbar__link--label hot-link">WE CARE HEALTH PLAN</div>
+                            </div>
+            
+            
+                        </div>
+                    </div>
+                    <!-- MOBILE MENU -->
+                    <div class="nb-menu-mobile">
+                        <input class="btn-nav-tggle" type="checkbox">
+
+                        </input>
+                        <span class="icon">
+                            <img src="../src/images/icons/icons8-menu-windows-11-outline/icons8-menu-48.png" alt="menu">
+                        </span>
+                        <div class="nb-menu">
+                            <div class="nb-menu-close btn-close">
+                                <img src="../src/images/icons/icons8-close-50.png" alt="">
+                            </div>
+                            <div class="menu">
+                                <div class="menu__group links">
+                                    <input class="sm-link" type="radio" id="about" name="sub-menu" data-link="about">
+                                    <input class="sm-link" type="radio" id="services" name="sub-menu" data-link="services">
+                                    <input class="sm-link" type="radio" id="new-patient" name="sub-menu" data-link="new-patient">
+                                    <input class="sm-link" type="radio" id="we-care" name="sub-menu" data-link="we-care">
+                                    <input class="sm-link" type="radio" id="community" name="sub-menu" data-link="community">
+                                    <input class="sm-close" id="sm-close" type="radio" name="sub-menu">
+                                    
+                                    <label class="link" for="about">About Us</label>
+                                    <label class="link" for="services">Services</label>
+                                    <label class="link" for="new-patient">New Patient</label>
+                                    <label class="link" for="we-care">We Care Dental Plan</label>
+                                    <label class="link" for="community">Community</label>
+
+                                    <!-- ABOUT US MENU -->
+                                    <div class="sub-menu" data-menu="about">
+                                        <label class="sm-close-btn" for="sm-close">
+                                            <img src="../src/icons/icons8-back-50.png" alt="">
+                                            <span class="label">back</span>
+
+                                        </label>
+                                        <div class="sub-menu__title">About Us</div>
+                                        <!-- another menu -->
+                                        <div class="hot-links">
+                                            <span><a href="">Meet The Team</a></span>
+                                        </div>
+                                    </div>
+
+                                    <!-- SERVICES MENU -->
+                                    <div class="sub-menu" data-menu="services">
+                                        <label class="sm-close-btn" for="sm-close">
+                                            <img src="../src/icons/icons8-back-50.png" alt="">
+                                            <span class="label">back</span>
+
+                                        </label>
+                                        <div class="sub-menu__title">Services</div>
+                                        another menu
+                                    </div>
+                                    
+                                    <!-- NEW PATIENT MENU -->
+                                    <div class="sub-menu" data-menu="new-patient">
+                                        <label class="sm-close-btn" for="sm-close">
+                                            <img src="../src/icons/icons8-back-50.png" alt="">
+                                            <span class="label">back</span>
+
+                                        </label>
+                                        <div class="sub-menu__title">New Patient</div>
+                                        another menu
+                                    </div>
+
+                                    <!-- WE CARE MENU -->
+                                    <div class="sub-menu" data-menu="we-care">
+                                        <label class="sm-close-btn" for="sm-close">
+                                            <img src="../src/icons/icons8-back-50.png" alt="">
+                                            <span class="label">back</span>
+
+                                        </label>
+                                        <div class="sub-menu__title">We Care</div>
+                                        another menu
+                                    </div>
+
+                                    <!-- COMMUNITY MENU -->
+                                    <div class="sub-menu" data-menu="community">
+                                        <div class="sub-menu__title">Community</div>
+                                        <label class="sm-close-btn" for="sm-close">
+                                            <img src="../src/icons/icons8-back-50.png" alt="">
+                                            <span class="label">back</span>
+
+                                        </label>
+
+                                        another menu
+                                    </div>
+
+                                    <div class="contact-card">
+                                        <div class="hours-of-operation">
+                                            <div class="hours">
+                                                <div class="day">
+                                                    <span class="day__name">Monday</span>
+                                                    <div class="day__hours text-passive">8:00 AM -- 5:00 PM</div>
+                                                </div>
+                                                <div class="day">
+                                                    <span class="day__name">Tuesday</span>
+                                                    <div class="day__hours text-passive">8:00 AM -- 5:00 PM</div>
+                                                    <!-- <div class="day__note">Last appointment at 5:00</div> -->
+                                                </div>
+                                                <div class="day">
+                                                    <div class="day__name">Wednesday</div>
+                                                    <div class="day__hours text-passive">9:00 AM -- 2:00 PM</div>
+                                                </div>
+                                                <div class="day">
+                                                    <div class="day__name">Thursday</div>
+                                                    <div class="day__hours text-passive">7:00 AM -- 3:00 PM</div>
+                                                </div>
+                                                <div class="day">
+                                                    <div class="day__name">Friday</div>
+                                                    <div class="day__hours text-passive">Closed</div>
+                                                    <!-- <div class="day__note">Open Starting May 2023</div> -->
+                                                </div>
+                                                <div class="day">
+                                                    <div class="day__name">Saturday</div>
+                                                    <div class="day__hours text-passive closed">Closed</div>
+                                                </div>
+                                                <div class="day">
+                                                        <div class="day__name">Sunday</div>
+                                                        <div class="day__hours text-passive closed">Closed</div>
+                                                </div>
+                                                </div>
+                                            </div>
+                                    </div>
+
+                                </div>
+                                <div class="menu__group cta-group">
+                                    <div class="cta cta-hours">Hours of Operation</div>
+                                    <div class="cta cta-call-us">Call Us</div>
+                                    <div class="cta cta-schedule">Schedule Online</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+            </div>
+
+
+
+
+            </nav>
+            <heading>            
+                <div class="header contain-header contain" id="top">
+                    <div class="highlighter">
+                        <div class="slide">
+                            <span>No Insurance</span>
+                            <span>No Problem</span>
+                            <span>We Care!</span>
+
+                            <div class="cta">Find out more</div>
+                        </div>
+                    </div>
+                </div>
+            </heading>
+
+        </header>
+        <main>
+            content
+        </main>
+        <footer>
+            footer
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,111 @@
+.tggler {
+    position: absolute;
+    display: inline-flex;
+    background-color: black;
+    background-color: white;
+    // border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: transparent;
+    z-index: 10;
+    top: 50%;
+
+    &.next {
+        right: 25px;
+    }
+    &.prev {
+        left: 50px;
+    }
+    svg {
+        height: 42px;
+        width: 42px;
+        stroke: rgba(124, 124, 124, 0.87);
+    }
+}
+.swiper {
+    position: relative;
+    padding: 80px 0;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background: transparent;
+}
+.reviews {
+    background: transparent;
+    display: flex;
+    justify-content: space-evenly;
+    flex: 1;
+}
+.review {
+    position: relative;
+    display: inline-flex;
+    flex-wrap: wrap;
+    width: 520px;
+    margin: 0 40px;
+    padding: 20px 40px;
+    border-radius: 10px;
+    // border: 1px solid grey;
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.145);
+    .user-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        // background-color: #ccc;
+        &__img {
+            margin-top: 10px;
+        }
+        &__name {
+            margin: 10px 0;
+            line-height: 1.5;
+            font-family: 'Open sans';
+            font-size: 24px;
+        }
+        &__logo {
+            top: 10px;
+            right: 10px;
+            position: absolute;
+            margin: 20px;
+        }
+    }
+    .rating {
+        display: inline-flex;
+        width: 100%;
+    }
+
+    .copy {
+
+        overflow: hidden;
+        padding: 12px 0;
+        height: 200px;
+        width: 100%;
+        font-size: 18px;
+        line-height: 1.8;
+        font-family: 'Open sans';
+    }
+}
+
+.to-reviews {
+    display: flex;
+    justify-content: center;
+    // background-color: black;
+    .cta{
+        font-family: 'Bevan';
+        font-weight: 700;
+        font-size: 20px;
+        padding: 16px 20px;
+        margin-top: 10px;
+        width: max-content;
+        display: inline-flex;
+        border: 1px solid rgb(255, 211, 144);
+        background-color:rgba(253, 179, 67, 0.884);
+        color: white;
+        letter-spacing: .025em;
+        backdrop-filter: blur(20px);
+        border-radius: 8px;
+
+        &:hover {
+            background-color: white;
+            color:rgb(255, 187, 84)
+        }
+}
+}

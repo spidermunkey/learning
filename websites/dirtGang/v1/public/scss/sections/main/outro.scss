@@ -1,0 +1,115 @@
+.outro {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.reeler {
+    position: relative;
+}
+.headliner {
+    text-align: center;
+    font-size: 24px;
+    margin: 40px 0;
+}
+.feed {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+}
+
+.post {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // background-color: beige;
+    width: 16.6%;
+    width: 243px;
+    height: 200px;
+    .img {
+        position: relative;
+        height: 95%;
+        width: 95%;
+        background-color: white;
+        cursor: pointer;
+        
+        &:hover:after,
+        &:hover:before {
+            opacity: 1;
+        }
+
+        img {
+            height: 100%;
+            width: 100%;
+            
+        }
+        &:after {
+            content: '';
+            opacity: 0;
+            background: linear-gradient( 45deg, transparent,#00000067);
+            position: absolute;
+            inset: 0;
+            z-index: 99;
+            transition: 200ms ease-in-out;
+        }
+        &::before {
+            content: ' ';
+            opacity: 0;
+            background: url('../assets/instagram-icon.svg') center center/20px 20px no-repeat;
+            position: absolute;
+            z-index: 100;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+        }
+    }
+}
+.brand-ttl {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 24px;
+    padding: 40px 0 0;
+    margin-left: 20px;
+    color: #000000b2
+}
+.legals {
+    color: #000000b2;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+    .legal {
+        margin-bottom: 10px;
+    }
+}
+.socials {
+    padding: 10px 0;
+    // justify-content: center;
+    display: flex;
+    .social-bar {
+        border-radius: 16px;
+        // border: 1px solid #ddd;
+        // padding: 12px 8px;
+        // margin-left: 20px;
+        display: inline-flex;
+        & > div {
+            margin: 0 12px;
+        }
+    }
+
+    .ig {
+        transform: translateY(1px) scale(1.05);
+    }
+    .twitter {
+        transform: rotate(12deg) scale(.85) translate(1px,2px);
+    }
+    .fb {
+        transform: translate(-1px,1px) scale(.9);
+    }
+}
+.social-bar img {
+    height: 24px;
+    width: 24px;
+}
